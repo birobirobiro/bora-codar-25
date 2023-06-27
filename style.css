@@ -50,7 +50,8 @@ header {
   grid-area: header;
 }
 
-header .controls-left .controls-right {
+header .controls-left, 
+header .controls-right {
   display: flex;
   align-items: center;
   gap: 16px;
