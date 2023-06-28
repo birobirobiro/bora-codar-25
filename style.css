@@ -11,18 +11,13 @@ body {
   width: 100%;
   height: 100vh;
 
-  background: url('./assets/background.jpeg') lightgray 50% / cover no-repeat;
-  font-family: 'Inter', sans-serif;
+  background: url("./assets/background.jpeg") lightgray 50% / cover no-repeat;
+  font-family: "Inter", sans-serif;
   color: #fff;
-
-  /* background-color: #000; */
-  /* mix-blend-mode: darken; */
-
 }
 
 main {
   grid-area: main;
-
 }
 
 .container {
@@ -30,7 +25,8 @@ main {
   grid-template-columns: 64px 1fr;
   margin: 0 auto;
   gap: 24px;
-  grid-template-areas: "aside header header"
+  grid-template-areas:
+    "aside header header"
     "aside main main";
   grid-template-rows: 64px 540px;
 }
@@ -41,8 +37,10 @@ header {
   align-items: center;
   gap: 24px;
   border-radius: 80px;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.1) inset;
   backdrop-filter: blur(16px);
   width: 816px;
   height: 64px;
@@ -50,7 +48,7 @@ header {
   grid-area: header;
 }
 
-header .controls-left, 
+header .controls-left,
 header .controls-right {
   display: flex;
   align-items: center;
@@ -67,8 +65,9 @@ header .adress-bar {
   display: flex;
   align-items: center;
   border-radius: 80px;
-  background: rgba(0, 0, 0, 0.10);
-  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.10) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.20) inset;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
   width: 440px;
   height: 48px;
   justify-content: space-between;
@@ -91,8 +90,10 @@ aside {
   justify-content: center;
   gap: 12px;
   border-radius: 80px;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.1) inset;
   backdrop-filter: blur(16px);
   grid-area: aside;
   align-self: center;

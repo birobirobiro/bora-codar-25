@@ -1,8 +1,8 @@
 var video;
 var ambilight;
-var videoId = 'qC0vDKVPCrw';
+var videoId = "qC0vDKVPCrw";
 function onYouTubeIframeAPIReady() {
-  video = new YT.Player('video', {
+  video = new YT.Player("video", {
     videoId,
     events: {
       onReady: videoReady,
@@ -10,7 +10,7 @@ function onYouTubeIframeAPIReady() {
     },
   });
 
-  ambilight = new YT.Player('ambilight', {
+  ambilight = new YT.Player("ambilight", {
     videoId,
     events: {
       onReady: ambilightReady,
@@ -41,7 +41,8 @@ function optimizeAmbilight(event) {
   event.target.mute();
   if (qualityLevels && qualityLevels.length && qualityLevels.length > 0) {
     qualityLevels.reverse();
-    var lowestLevel = qualityLevels[qualityLevels.findIndex((q) => q !== 'auto')];
+    var lowestLevel =
+      qualityLevels[qualityLevels.findIndex((q) => q !== "auto")];
     event.target.setPlaybackQuality(lowestLevel);
   }
 }
